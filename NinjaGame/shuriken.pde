@@ -12,11 +12,11 @@ class shuriken extends obstacle {
     super(x, y, speedX, speedY);
     for (int i = 0; i < star.length; i++)
     {
-      star[i] = loadImage("star"+i+".gif");
+      star[i] = loadImage("img/star"+i+".gif");
       star[i].resize(75,75);
     }
     
-    dead = loadImage("Dead.png");
+    dead = loadImage("img/Dead.png");
     dead.resize(75,75);
     
     collision(main);
