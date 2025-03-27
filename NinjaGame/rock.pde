@@ -9,7 +9,7 @@ class rock extends shuriken{
     
     for(int i = 0; i < rock.length ; i++ )
     {
-      rock[i] = loadImage("rock"+i+".gif");
+      rock[i] = loadImage("img/rock"+i+".gif");
       rock[i].resize(50,50);
     }
     

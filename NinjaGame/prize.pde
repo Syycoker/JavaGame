@@ -15,7 +15,7 @@ class prize extends origin {
     {
       //this time i've implemented a for loop to load in the imags from the array
       //i've concantinated to fit the file name to what i've saved them as
-      coin[i] = loadImage("coin"+i+".gif");
+      coin[i] = loadImage("img/coin"+i+".gif");
       coin[i].resize(50, 50);
     }
   }

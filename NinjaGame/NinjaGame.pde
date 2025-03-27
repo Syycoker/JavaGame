@@ -27,13 +27,13 @@ rock hurt;
 
 void setup() {
   size(500, 500);
-  background = loadImage("backG.jpg");
+  background = loadImage("img/backG.jpg");
   background.resize(width, height);
-  background2 = loadImage("background.jpg"); 
+  background2 = loadImage("img/background.jpg"); 
   background2.resize(width, height);
-  helpBack = loadImage("helpG.jpg");
+  helpBack = loadImage("img/helpG.jpg");
   helpBack.resize(width,height);
-  gameOver = loadImage("gameOver.jpg");
+  gameOver = loadImage("img/gameOver.jpg");
   gameOver.resize(width,height);
   
   main = new player(250, 50, 0, 0);
@@ -172,6 +172,8 @@ void collisionBad()
       {
         main.x = 250; //reset player's x & y position
         main.y = 50;
+        main.speedX = 0;
+        main.speedY = 0;
         
         damageCount = 0; //reset health bar
         livesCount = 5; //reset lives counter back to 5 & point counter back to 0
@@ -201,6 +203,8 @@ void collisionBad()
       {
         main.x = 250; //reset player's x & y position
         main.y = 50;
+        main.speedX = 0;
+        main.speedY = 0;
         
         damageCount = 0; //reset health bar
         livesCount = 5; //reset lives counter back to 5 & point counter back to 0
